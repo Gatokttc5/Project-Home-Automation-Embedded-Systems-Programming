@@ -1,24 +1,134 @@
-# Smart Home - Preliminar scripts
+# 🏠 Smart Room Automation System
 
-This branch contents only the preliminar codes of the different functions and the main of the project.
+A complete embedded systems project integrating real-time control, IoT communication, security, and automation using STM32 and ESP8266.
 
-Smart Room Automation System with STM32 Nucleo F446RE
+---
 
-Using:
+## 📸 System Overview
 
-* STMicroelectronics STM32 F446RE
-* Espressif Systems ESP8266MOD
-* MB-102 power module
-* Servo SG90
-* 5V Fan
-* PIR
-* DHT22
-* LEDs
-* Buzzer
+![System Overview](system_overview.jpg)
 
-* Description: The Smart Room Automation System is a miniature smart home prototype controlled by an STM32 F446RE microcontroller. The project integrates wireless communication, automation, sensors, and actuators to simulate the operation of a modern intelligent room inside a custom laser-cut wooden model. Communication with the system is achieved through an ESP8266 WiFi module connected to a mobile application.
+---
 
-The system includes password-based door access with servo motor control, automatic and manual lighting modes using a PIR motion sensor, and environmental monitoring with a DHT sensor. Additionally, the fan speed is controlled dynamically according to the temperature difference using PWM-based proportional control. The project combines concepts from embedded systems, real-time control, wireless communication, and smart home automation.
+## 🚀 Features
 
-* <img width="1536" height="1024" alt="WhatsApp Image 2026-05-19 at 21 31 10" src="https://github.com/user-attachments/assets/de24d044-f108-4f67-a6cc-6ffd22a56197" />
+### 🔐 Security System
+- Password authentication from mobile app
+- Door control using servo motor
+- Alarm after incorrect attempts
 
+### 💡 Smart Lighting
+- Manual ON/OFF
+- Automatic mode (PIR-based)
+
+### 🌡️ Environment Monitoring
+- Temperature & humidity (DHT22)
+
+### 🌬️ Fan Control
+- PWM control
+- Proportional control
+
+### 📡 Wireless Communication
+- WiFi via ESP8266
+- HTTP API
+
+---
+
+## 🧠 Architecture
+
+```
+PHONE APP
+    ↓ WiFi
+ESP8266MOD
+    ↓ UART
+STM32
+    ↓
+Sensors + Actuators
+```
+
+---
+
+## 🔧 Hardware
+
+- STM32 F446RE
+- ESP8266MOD
+- PIR Sensor
+- DHT22
+- Servo SG90
+- 5V Fan
+- LEDs
+- Buzzer
+- MB102 Power Supply
+
+---
+
+## ⚡ Power Notes
+
+- ESP8266 → ONLY 3.3V
+- Servo/Fan → external 5V
+- Common GND required
+
+---
+
+## 🔌 Pin Map
+
+| Function | Pin |
+|----------|-----|
+| UART TX | PA2 |
+| UART RX | PA3 |
+| Servo | PA8 |
+| Fan | PB6 |
+| PIR | PC0 |
+| DHT22 | PC1 |
+| LEDs | PB0–PB13 |
+| Buzzer | PB10 |
+
+---
+
+## 📦 Software
+
+Modules:
+- UART
+- Sensors
+- Control
+- Actuators
+- Status
+
+Main loop:
+
+```c
+while(1)
+{
+    UART_Process();
+    Sensors_Update();
+    Control_Update();
+    Actuators_Update();
+    Status_Update();
+}
+```
+
+---
+
+## 📡 Protocol
+
+Commands:
+
+```
+PASS:1234
+LIGHT_MODE:AUTO
+LIGHT:ON
+SET_TEMP:25
+STATUS?
+```
+
+Response:
+
+```
+STATUS:DOOR=OPEN;TEMP=27;FAN=60
+```
+
+---
+
+## 🚀 Conclusion
+
+A complete IoT embedded system demonstrating real-world engineering concepts.
