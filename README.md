@@ -6,7 +6,7 @@ A complete embedded systems project integrating real-time control, IoT communica
 
 ## 📸 System Overview
 
-![System Overview](system_overview.jpg)
+* <img width="1536" height="1024" alt="WhatsApp Image 2026-05-19 at 21 31 10" src="https://github.com/user-attachments/assets/de24d044-f108-4f67-a6cc-6ffd22a56197" />
 
 ---
 
