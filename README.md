@@ -133,6 +133,8 @@ STATUS:DOOR=OPEN;TEMP=27;FAN=60
 ---
 
 assets/2.jpg
+assets/2.jpg
+
 
 ## 🚀 Conclusion
 
