@@ -6,7 +6,7 @@ A complete embedded systems project integrating real-time control, IoT communica
 
 ## 📸 System Overview
 
-assets/1.jpeg
+assets/1.jpg
 
 ---
 
@@ -128,6 +128,8 @@ STATUS:DOOR=OPEN;TEMP=27;FAN=60
 ```
 
 ---
+
+assets/2.jpg
 
 ## 🚀 Conclusion
 
