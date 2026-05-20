@@ -6,7 +6,7 @@ A complete embedded systems project integrating real-time control, IoT communica
 
 ## 📸 System Overview
 
-assets/1.jpeg
+https://github.com/user-attachments/assets/1.jpeg
 
 ---
 
