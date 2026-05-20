@@ -11,6 +11,13 @@ A complete embedded systems project integrating real-time control, IoT communica
 </p>
 https://raw.githubusercontent.com/Gatokttc5/Project-Home-Automation-Embedded-Systems-Programming/main/assets/1.jpeg
 
+## 📸 System Overview
+
+<p align="center">
+  https://raw.githubusercontent.com/Gatokttc5/Project-Home-Automation-Embedded-Systems-Programming/main/assets/1.jpeg
+</p>
+
+
 ---
 
 ## 🚀 Features
