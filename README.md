@@ -131,9 +131,9 @@ STATUS:DOOR=OPEN;TEMP=27;FAN=60
 
 ---
 
-assets/2.jpg
-assets/2.jpg
-
+<p align="center">
+  https://raw.githubusercontent.com/Gatokttc5/Project-Home-Automation-Embedded-Systems-Programming/main/assets/2.jpg
+</p>
 
 ## 🚀 Conclusion
 
